@@ -6,7 +6,7 @@ COPY . .
 RUN npm run build
 
 # /app/build <- all files are here
-
+# test
 FROM nginx
 COPY --from=builder /app/build /usr/share/nginx/html
 
